@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/* ==========================
+   Navigation 9 blocs
+========================== */
+/* Couleurs pastel contrastées pour chaque bloc */
+.nav-pastel-1 {
+  background-color: #FF6B6B;
+}
+
+.nav-pastel-2 {
+  background-color: #FFB74D;
+}
+
+.nav-pastel-3 {
+  background-color: #FFD93D;
+}
+
+.nav-pastel-4 {
+  background-color: #6BCB77;
+}
+
+.nav-pastel-5 {
+  background-color: #4D96FF;
+}
+
+.nav-pastel-6 {
+  background-color: #9B5DE5;
+}
+
+.nav-pastel-7 {
+  background-color: #FF6ED3;
+}
+
+.nav-pastel-8 {
+  background-color: #FF9F1C;
+}
+
+.nav-pastel-9 {
+  background-color: #00C2BA;
+}
+
+/* Texte blanc pour tous les blocs */
+.nav-pastel-1, .nav-pastel-2, .nav-pastel-3,
+.nav-pastel-4, .nav-pastel-5, .nav-pastel-6,
+.nav-pastel-7, .nav-pastel-8, .nav-pastel-9 {
+  color: #ffffff !important;
+}
+
+/* Grille de navigation */
+.offcanvas-end.home-nav .row {
+  margin: 0;
+  height: 100vh;
+  /* occupe toute la hauteur de l'écran */
+}
+
+.offcanvas-end.home-nav .col-6 {
+  padding: 0;
+}
+
+/* Blocs navigation */
+.nav-hover-zoom {
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.nav-hover-zoom:hover {
+  -webkit-filter: brightness(1.1);
+  filter: brightness(1.1);
+  /* éclaircit légèrement la couleur au survol */
+  text-decoration: none;
+}
+
+/* Texte et icônes */
+.nav-icons {
+  width: 2.5rem;
+  height: auto;
+  margin-bottom: 0.5rem;
+}
+
+.stretched-link {
+  color: #fff !important;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* Responsive : 3 colonnes sur large, 2 sur tablette, 1 sur mobile */
+@media (max-width: 992px) {
+  .col-sm-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.logo-container {
+  width: 50%;
+  max-width: 50%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.logo-container img {
+  max-width: 70%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .logo-container {
+    width: 100%;
+    max-width: 100%;
+  }
+  .logo-container img {
+    max-width: 50%;
+  }
+}
+
+.nav-container {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+@media (max-width: 768px) {
+  .nav-container {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=user-rtl.css.map */

@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/* ================= Navigation ================= */
+.nav-pastel-1{background:#ff6b6b}
+.nav-pastel-2{background:#ffb74d}
+.nav-pastel-3{background:#ffd93d}
+.nav-pastel-4{background:#6bcb77}
+.nav-pastel-5{background:#4d96ff}
+.nav-pastel-6{background:#9b5de5}
+.nav-pastel-7{background:#ff6ed3}
+.nav-pastel-8{background:#ff9f1c}
+.nav-pastel-9{background:#00c2ba}
+
+.nav-pastel-3:hover,
+.nav-pastel-3:focus{background:#e6c800}
+
+.nav-pastel-1,
+.nav-pastel-2,
+.nav-pastel-3,
+.nav-pastel-4,
+.nav-pastel-5,
+.nav-pastel-6,
+.nav-pastel-7,
+.nav-pastel-8,
+.nav-pastel-9,
+.stretched-link{color:#fff!important}
+
+.offcanvas-end.home-nav .row{margin:0;height:100vh}
+.offcanvas-end.home-nav .col-6{padding:0}
+
+.nav-hover-zoom{transition:.3s}
+.nav-hover-zoom:hover,
+.nav-hover-light:hover{filter:brightness(1.15);text-decoration:none}
+
+.nav-icons{width:2.5rem;margin-bottom:.5rem}
+.stretched-link{font-weight:700;text-decoration:none}
+
+/* ================= Layout ================= */
+.logo-img{width:100%;max-width:777px;height:auto}
+.nav-container{width:50%;display:flex;flex-wrap:wrap}
+.nav-text{font-family:'Special Elite',monospace}
+
+.section-close{
+  position:fixed;top:2rem;right:2rem;z-index:1050;
+  width:48px;height:48px;border:0;background:none;
+  font-size:2rem;line-height:1;cursor:pointer
+}
+.section-close:hover{opacity:.5}
+
+.info-list{list-style:none;margin:0;padding-left:1.5rem}
+.info-list li{display:flex;gap:.6rem;align-items:flex-start}
+.info-list i{flex:0 0 1.2rem;margin-top:.15em;color:#4f7f3a}
+
+/* ================= Fond papier ================= */
+main.main,
+.offcanvas-body{
+  background:#fffdf9;
+  background-image:
+    linear-gradient(45deg,rgba(0,0,0,.04) 1px,transparent 1px),
+    linear-gradient(-45deg,rgba(0,0,0,.04) 1px,transparent 1px);
+  background-size:20px 20px;
+  background-blend-mode:overlay
+}
+
+html,body{height:100%;margin:0;overflow-x:hidden}
+
+/* ================= Librairie ================= */
+#librairie .text-center p,
+.librairie-intro{text-align:center;line-height:1.6;margin:0 auto}
+
+.librairie-icon{
+  font-size:2.5rem;color:#00c2ba;
+  display:block;margin:0 auto 1.1rem
+}
+
+.librairie-inter-section{margin:4rem 0 2rem;position:relative;z-index:1}
+.librairie-section-title{text-align:center}
+
+/* ================= Swiper ================= */
+.swiper{width:100%;padding:2rem 0;overflow:visible}
+.swiper-wrapper{display:flex;align-items:stretch}
+.swiper-slide{
+  display:flex;flex-direction:column;align-items:center;
+  text-align:center;padding:1rem;height:100%;cursor:pointer
+}
+.swiper-slide img{
+  max-height:200px;margin-bottom:.5rem;
+  transition:transform .3s
+}
+.swiper-slide:hover img{transform:scale(1.05)}
+.swiper-slide h5{margin-top:.5rem;font-weight:600}
+.swiper-slide p{font-size:.95rem;line-height:1.4}
+
+.swiper-pagination{margin-top:1rem}
+
+/* Flèches */
+.swiper-button-prev,
+.swiper-button-next{
+  top:50%;transform:translateY(-50%);
+  color:#fbcb77;background:none;pointer-events:auto
+}
+
+@media(max-width:991px){
+  .swiper-button-prev,
+  .swiper-button-next{
+    position:absolute;width:2rem;height:2rem;z-index:1000
+  }
+  .swiper-button-prev{left:0}
+  .swiper-button-next{right:0}
+}
+
+@media(min-width:992px){
+  .swiper-button-prev,
+  .swiper-button-next{
+    position:fixed;width:2.5rem;height:2.5rem;z-index:10000
+  }
+  .librairie-prev,
+  .recommandations-prev{left:1rem}
+  .librairie-next,
+  .recommandations-next{right:1rem}
+}
+
+@media(max-width:767px){
+  .swiper-slide img{max-height:150px}
+}
+
+/* ================= Modal ================= */
+.modal{
+  display:none;position:fixed;inset:0;
+  background:rgba(0,0,0,.6);z-index:10000
+}
+#librairieModal .modal-content{
+  background:#fff;margin:10% auto;
+  padding:1.5rem;max-width:500px;
+  border-radius:10px;position:relative;text-align:center
+}
+.modal-close{
+  position:absolute;top:.5rem;right:1rem;
+  font-size:2rem;font-weight:700;cursor:pointer
+}
+.modal-img{max-width:100%;margin-bottom:1rem}
+
+
+/* ================= Offcanvas ================= */
+.offcanvas.home-content{
+  background:
+    linear-gradient(rgba(255,253,249,.77),rgba(255,253,249,.77)),
+    url("../img/index.webp") center/cover no-repeat;
+  width:50vw;max-width:none
+}
+.home-content .offcanvas-body{height:100vh;background:transparent}
+.home-content .logo-img{position:relative;z-index:2}
+
+@media(max-width:768px){
+  .logo-img{max-width:288px}
+  .nav-container{width:100%}
+}
+
+@media(max-width:991.98px){
+  .offcanvas.home-content{width:100vw}
+}
+
+@media(max-width:767.98px){
+  section.page .col-lg-8{padding-top:4rem!important}
+}
+
+/* ================= Cards ================= */
+/* ================= Cards ================= */
+.card.square {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+  position: relative;
+}
+
+.card.square img.blog-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-overlay-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;               /* overlay ≈ 1/3 carte */
+  background: rgba(0,0,0,.4);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  overflow: hidden;
+}
+
+.card-overlay-1 h4 {
+  margin: 0.2rem 0;
+  font-size: 1.2rem;        /* taille normale pour desktop et grands écrans */
+  line-height: 1.2;
+}
+
+.card-overlay-1 p {
+  margin: 0.1rem 0;
+  font-size: 1rem;          /* texte normal */
+  line-height: 1.25;
+}
+
+/* Mobile / petits écrans */
+@media(max-width:767.98px) {
+  .card-overlay-1 {
+    height: 35%;             /* overlay un peu plus grand pour lisibilité */
+    padding: 0.5rem 1rem 0.5rem 1.2rem;
+  }
+  .card-overlay-1 h4 { font-size: 1.1rem; }
+  .card-overlay-1 p  { font-size: 0.9rem; }
+}
+
+/* Desktop intermédiaire : réduire la taille du texte pour éviter retour à la ligne */
+@media (max-width:1366px) and (max-height:800px),
+       (max-width:1280px) and (max-height:800px),
+       (max-width:1024px) and (max-height:600px) {
+  .card-overlay-1 h4 { font-size: 0.88rem; }   /* titre réduit */
+  .card-overlay-1 p  { font-size: 0.7rem; }/* texte réduit */
+}
+
+.modal-img-fixed {
+  width: 100%;       /* occupe toute la largeur du conteneur */
+  max-width: 400px;  /* largeur max uniforme */
+  height: 290px;     /* hauteur fixe uniforme */
+  object-fit: cover; /* garde les proportions et recadre si nécessaire */
+}
