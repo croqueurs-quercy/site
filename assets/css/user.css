@@ -218,35 +218,47 @@ html,body{height:100%;margin:0;overflow-x:hidden}
 }
 
 /* ================= Responsive ================= */
-@media(max-width:768px){
-  .logo-img{max-width:288px}
-  .nav-container{width:100%}
+
+@media(max-width:767.98px){
+  .logo-img { max-width: 288px; }
+  .nav-container { width: 100%; }
+  section.page .col-lg-8 { padding-top: 4rem !important; }
+  .card-overlay-1 {
+    height: 35%;
+    padding: 0.5rem 1rem 0.5rem 1.2rem;
+  }
+  .card-overlay-1 h4 { font-size: 1.1rem; }
+  .card-overlay-1 p  { font-size: 0.9rem; }
 }
 
 @media(max-width:991.98px){
-  .offcanvas.home-content{width:100vw}
-}
-
-@media(max-width:767.98px){
-  section.page .col-lg-8{padding-top:4rem!important}
-  .card-overlay-1{
-    height:35%;
-    padding:0.5rem 1rem 0.5rem 1.2rem
-  }
-  .card-overlay-1 h4{font-size:1.1rem}
-  .card-overlay-1 p{font-size:0.9rem}
+  .offcanvas.home-content { width: 100vw; }
 }
 
 @media(max-width:1024px) and (max-height:600px){
-  .card-overlay-1 h4{font-size:0.88rem}
-  .card-overlay-1 p{font-size:0.75rem}
+  .card-overlay-1 h4 { font-size: 0.88rem; }
+  .card-overlay-1 p  { font-size: 0.75rem; }
 }
 
 /* Écran 1366x768 (XL) */
 @media(min-width:1200px) and (max-width:1399px){
-  .logo-img{max-height:80vh;width:auto}
-  .card-overlay-1 h4{font-size:1.1rem}
-  .card-overlay-1 p{font-size:0.8rem}
+  .logo-img          { max-height: 80vh; width: auto; }
+  .card-overlay-1 h4 { font-size: 1.1rem; }
+  .card-overlay-1 p  { font-size: 0.8rem; }
+}
+
+/* Écran 1440x900 (XXL intermédiaire) */
+@media(min-width:1400px) and (max-width:1599px){
+  section.page h2     { font-size: 2.2rem; }
+  section.page h4     { font-size: 1.2rem; }
+  section.page p      { font-size: 0.9rem; }
+  .home-nav .nav-text { font-size: 1.66rem !important; }
+  #actualites .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+}
+
+/* Grands écrans ≥1600px */
+@media(min-width:1600px){
+  #actualites .col-sm-6 { flex: 0 0 33.333%; max-width: 33.333%; }
 }
 
 /* Icône + au centre de la carte au survol */
