@@ -248,3 +248,35 @@ html,body{height:100%;margin:0;overflow-x:hidden}
   .card-overlay-1 h4{font-size:1.1rem}
   .card-overlay-1 p{font-size:0.8rem}
 }
+
+/* Icône + au centre de la carte au survol */
+.card.square::after {
+  content: '+';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  font-size: 4rem;
+  font-weight: 300;
+  color: white;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  transition: transform 0.25s ease, opacity 0.25s ease;
+  opacity: 0;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.card.square:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}
+
+/* Assombrit légèrement l'image au survol */
+.card.square:hover .blog-img {
+  filter: brightness(0.77);
+  transition: filter 0.29s ease;
+}
+
+.card.square .blog-img {
+  transition: filter 0.29s ease;
+}
