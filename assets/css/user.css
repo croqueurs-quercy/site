@@ -77,51 +77,41 @@ html,body{height:100%;margin:0;overflow-x:hidden}
 .librairie-section-title{text-align:center}
 
 /* ================= Swiper ================= */
-.swiper{width:100%;padding:2rem 0;overflow:visible}
-.swiper-wrapper{display:flex;align-items:stretch}
-.swiper-slide{
-  display:flex;flex-direction:column;align-items:center;
-  text-align:center;padding:1rem;height:100%;cursor:pointer
+.swiper { width:100%; padding:2rem 0; overflow:visible }
+.swiper-wrapper { display:flex; align-items:stretch }
+.swiper-slide {
+  display:flex; flex-direction:column; align-items:center;
+  text-align:center; padding:1rem; height:100%; cursor:pointer
 }
-.swiper-slide img{
-  max-height:200px;margin-bottom:.5rem;
+.swiper-slide img {
+  max-height:200px; margin-bottom:.5rem;
   transition:transform .3s
 }
-.swiper-slide:hover img{transform:scale(1.05)}
-.swiper-slide h5{margin-top:.5rem;font-weight:600}
-.swiper-slide p{font-size:.95rem;line-height:1.4}
+.swiper-slide:hover img { transform:scale(1.05) }
+.swiper-slide h5 { margin-top:.5rem; font-weight:600 }
+.swiper-slide p { font-size:.95rem; line-height:1.4 }
 
-.swiper-pagination{margin-top:1rem}
+.swiper-pagination { margin-top:1rem; position:relative !important; }
 
-/* Flèches Swiper */
+/* Flèches — positionnées relativement à chaque swiper */
 .swiper-button-prev,
-.swiper-button-next{
-  top:50%;transform:translateY(-50%);
-  color:#fbcb77;background:none;pointer-events:auto
+.swiper-button-next {
+  top:50%;
+  transform:translateY(-50%);
+  color:#fbcb77;
+  background:none;
+  pointer-events:auto;
+  position:absolute !important; /* jamais fixed */
+  width:2.5rem;
+  height:2.5rem;
+  z-index:1000
 }
 
-@media(max-width:991px){
-  .swiper-button-prev,
-  .swiper-button-next{
-    position:absolute;width:2rem;height:2rem;z-index:1000
-  }
-  .swiper-button-prev{left:0}
-  .swiper-button-next{right:0}
-}
-
-@media(min-width:992px){
-  .swiper-button-prev,
-  .swiper-button-next{
-    position:fixed;width:2.5rem;height:2.5rem;z-index:10000
-  }
-  .librairie-prev,
-  .recommandations-prev{left:1rem}
-  .librairie-next,
-  .recommandations-next{right:1rem}
-}
+.swiper-button-prev { left:0 }
+.swiper-button-next { right:0 }
 
 @media(max-width:767px){
-  .swiper-slide img{max-height:150px}
+  .swiper-slide img { max-height:150px }
 }
 
 /* ================= Modal ================= */
