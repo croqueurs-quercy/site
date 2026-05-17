@@ -229,6 +229,9 @@ html,body{height:100%;margin:0;overflow-x:hidden}
   }
   .card-overlay-1 h4 { font-size: 1.1rem; }
   .card-overlay-1 p  { font-size: 0.9rem; }
+    /* Supprime l'animation sur mobile */
+  #offcanvasStart,
+  #offcanvasEnd { transition: none !important; }
 }
 
 @media(max-width:991.98px){
