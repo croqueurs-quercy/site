@@ -62,7 +62,7 @@ main.main,
   background-blend-mode:overlay
 }
 
-html,body{height:100%;margin:0;overflow-x:hidden;overflow-y:hidden}
+html,body{height:100%;margin:0;overflow-x:hidden}
 
 /* ================= Librairie ================= */
 #librairie .text-center p,
@@ -148,20 +148,37 @@ html,body{height:100%;margin:0;overflow-x:hidden;overflow-y:hidden}
 }
 
 /* ================= Offcanvas ================= */
-.offcanvas.home-content{
+.offcanvas.home-content {
   background:
-    linear-gradient(rgba(255,253,249,.77),rgba(255,253,249,.77)),
+    linear-gradient(rgba(255,253,249,.77), rgba(255,253,249,.77)),
     url("../img/index.webp") center/cover no-repeat;
-  width:50vw;max-width:none
+  width: 50vw;
+  max-width: none;
 }
-.home-content .offcanvas-body{height:100vh;background:transparent}
-.home-content .logo-img{position:relative;z-index:2}
+
+.home-content .offcanvas-body {
+  height: 100vh;
+  background: transparent;
+}
+
+.home-content .logo-img {
+  position: relative;
+  z-index: 2;
+}
+
+#offcanvasStart {
+  overflow: hidden !important;
+  max-height: 100vh;
+}
+
+#offcanvasStart .offcanvas-body {
+  overflow: hidden !important;
+}
 
 #offcanvasStart,
-#offcanvasStart .offcanvas-body{overflow:hidden !important}
-
-#offcanvasStart,
-#offcanvasEnd{transition:transform 0.9s ease-in-out}
+#offcanvasEnd {
+  transition: transform 0.9s ease-in-out;
+}
 
 /* ================= Cards ================= */
 .card.square{
