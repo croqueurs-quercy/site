@@ -161,7 +161,7 @@ html,body{height:100%;margin:0;overflow-x:hidden;overflow-y:hidden}
 #offcanvasStart .offcanvas-body{overflow:hidden !important}
 
 #offcanvasStart,
-#offcanvasEnd{transition:transform 0.4s ease-in-out}
+#offcanvasEnd{transition:transform 0.9s ease-out}
 
 /* ================= Cards ================= */
 .card.square{
