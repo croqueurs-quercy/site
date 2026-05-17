@@ -156,6 +156,11 @@ html,body{height:100%;margin:0;overflow-x:hidden;overflow-y: hidden}
   overflow: hidden !important;
 }
 
+#offcanvasStart,
+#offcanvasEnd {
+  transition: transform 0.3s ease-in-out !important;
+}
+
 @media(max-width:768px){
   .logo-img{max-width:288px}
   .nav-container{width:100%}
@@ -174,7 +179,7 @@ html,body{height:100%;margin:0;overflow-x:hidden;overflow-y: hidden}
     max-height: 80vh;
     width: auto;
   }
-  
+
 /* ================= Cards ================= */
 /* ================= Cards ================= */
 .card.square {
