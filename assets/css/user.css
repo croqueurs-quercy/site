@@ -220,8 +220,8 @@ html,body{height:100%;margin:0;overflow-x:hidden}
    Écran 1366x768 — 2 colonnes, taille lisible
    ============================================================ */
 @media (min-width: 1200px) and (max-width: 1399px) {
-  .card-overlay-1 h4 { font-size: 1.1rem; }
-  .card-overlay-1 p  { font-size: 0.7rem; }
+  .card-overlay-1 h4 { font-size: 1.2rem; }
+  .card-overlay-1 p  { font-size: 0.8rem; }
 }
 
 /* ============================================================
