@@ -62,7 +62,7 @@ main.main,
   background-blend-mode:overlay
 }
 
-html,body{height:100%;margin:0;overflow-x:hidden}
+html,body{height:100%;margin:0;overflow-x:hidden;overflow-y: hidden}
 
 /* ================= Librairie ================= */
 #librairie .text-center p,
@@ -151,6 +151,11 @@ html,body{height:100%;margin:0;overflow-x:hidden}
 .home-content .offcanvas-body{height:100vh;background:transparent}
 .home-content .logo-img{position:relative;z-index:2}
 
+#offcanvasStart,
+#offcanvasStart .offcanvas-body {
+  overflow: hidden !important;
+}
+
 @media(max-width:768px){
   .logo-img{max-width:288px}
   .nav-container{width:100%}
@@ -164,6 +169,12 @@ html,body{height:100%;margin:0;overflow-x:hidden}
   section.page .col-lg-8{padding-top:4rem!important}
 }
 
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .logo-img {
+    max-height: 80vh;
+    width: auto;
+  }
+  
 /* ================= Cards ================= */
 /* ================= Cards ================= */
 .card.square {
